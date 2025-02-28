@@ -1,193 +1,178 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.4">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimize Your Digital Media Strategy | YOptima</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+        }
+        .header {
+            background-color: #1a1a2e;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            position: relative;
+            border-bottom: 5px solid #e94560;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 42px;
+            font-weight: bold;
+            animation: fadeInDown 1s ease-in-out;
+        }
+        .header p {
+            font-size: 20px;
+            margin-top: 10px;
+            font-weight: 300;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 50px 0;
+        }
+        .cta {
+            text-align: center;
+            margin: 50px 0;
+            position: relative;
+        }
+        .cta button {
+            background-color: #e94560;
+            color: white;
+            padding: 15px 40px;
+            font-size: 22px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .cta button:hover {
+            transform: scale(1.1);
+            background-color: #d63050;
+        }
+        .features, .testimonials, .clients, .faqs {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            text-align: center;
+            animation: fadeInUp 1s ease-in-out;
+        }
+        .feature-box, .testimonial-box, .client-box, .faq-box {
+            width: 30%;
+            padding: 25px;
+            background: #f5f5f5;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .feature-box:hover, .testimonial-box:hover, .client-box:hover, .faq-box:hover {
+            transform: translateY(-10px);
+        }
+        .clients {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .clients img {
+            max-width: 150px;
+            margin: 10px;
+            display: block;
+        }
+        .faqs {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .faq-box {
+            width: 80%;
+            text-align: left;
+        }
+        .faq-box h3 {
+            cursor: pointer;
+        }
+        .faq-content {
+            display: none;
+            padding-top: 10px;
+        }
+        .faq-box.active .faq-content {
+            display: block;
+        }
+        .footer {
+            background-color: #1a1a2e;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            font-size: 14px;
+        }
+        @media screen and (max-width: 768px) {
+            .features, .testimonials, .clients, .faqs {
+                flex-direction: column;
+                align-items: center;
+            }
+            .feature-box, .testimonial-box, .client-box, .faq-box {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Optimize Your Digital Media Strategy | YOptima&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Arial', sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #ffffff;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #333;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.header {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #1a1a2e;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 60px 20px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>position: relative;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: 5px solid #e94560;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.header h1 {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 42px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>animation: fadeInDown 1s ease-in-out;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.header p {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 300;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.container {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>width: 80%;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: auto;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 50px 0;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.cta {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 50px 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>position: relative;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.cta button {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #e94560;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 15px 40px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 22px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 5px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.cta button:hover {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transform: scale(1.1);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #d63050;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.features, .testimonials, .clients, .faqs {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>justify-content: space-between;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>gap: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>animation: fadeInUp 1s ease-in-out;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.feature-box, .testimonial-box, .client-box, .faq-box {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>width: 30%;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 25px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: #f5f5f5;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transition: transform 0.3s ease-in-out;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.feature-box:hover, .testimonial-box:hover, .client-box:hover, .faq-box:hover {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transform: translateY(-10px);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.clients {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>flex-wrap: wrap;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.clients img {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-width: 150px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: block;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.faqs {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>flex-direction: column;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 50px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.faq-box {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>width: 80%;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: left;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.faq-box h3 {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.faq-content {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding-top: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.faq-box.active .faq-content {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: block;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.footer {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #1a1a2e;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 30px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 14px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>@media screen and (max-width: 768px) {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>.features, .testimonials, .clients, .faqs {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>flex-direction: column;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">            </span>.feature-box, .testimonial-box, .client-box, .faq-box {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>width: 80%;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>margin-bottom: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1&gt;Optimize Your Digital Media Strategy with YOptima&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Helping high-growth brands maximize ROI on Google Ads &amp; beyond&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 style="text-align:center; font-size:28px; color:#1a1a2e;"&gt;Why Choose YOptima?&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p style="text-align:center; font-size:18px;"&gt;We provide AI-powered programmatic advertising solutions, digital media audits, and full-funnel growth strategies to help Series A/B brands scale efficiently.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="features"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="feature-box"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;Google Ads Audit&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Identify inefficiencies, optimize spending, and improve conversion rates.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="feature-box"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;AI-Powered Insights&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Leverage our proprietary tools like DeepVu and Nyo for intelligent media buying.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="feature-box"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;Full-Funnel Growth&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Optimize branding, acquisition, and retention strategies across multiple platforms.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 style="text-align:center; font-size:28px; color:#1a1a2e;"&gt;What Our Clients Say&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="testimonials"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="testimonial-box"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;“YOptima transformed our digital marketing strategy, increasing our ROI by 150%!”&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h4&gt;- John Doe, CEO, TechGrowth&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="testimonial-box"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;“Their AI-powered insights helped us target the right audience, boosting our engagement rates.”&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h4&gt;- Jane Smith, Marketing Head, ScaleX&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 style="text-align:center; font-size:28px; color:#1a1a2e;"&gt;FAQs&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="faqs"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="faq-box"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3 onclick="this.parentElement.classList.toggle('active')"&gt;How long does the audit take?&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="faq-content"&gt;Typically, our audits are completed within 5-7 business days.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="faq-box"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3 onclick="this.parentElement.classList.toggle('active')"&gt;What results can I expect?&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="faq-content"&gt;Most of our clients see an increase in ROI and better audience targeting within 4 weeks.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="cta"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 style="color:#1a1a2e;"&gt;Ready to Scale Your Brand?&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;button&gt;Get a Free Audit&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="footer"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;&amp;copy; 2025 YOptima | Data-Driven Digital Growth | Contact us: info@yoptima.com&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+    <div class="header">
+        <h1>Optimize Your Digital Media Strategy with YOptima</h1>
+        <p>Helping high-growth brands maximize ROI on Google Ads & beyond</p>
+    </div>
+    <div class="container">
+        <h2 style="text-align:center; font-size:28px; color:#1a1a2e;">Why Choose YOptima?</h2>
+        <p style="text-align:center; font-size:18px;">We provide AI-powered programmatic advertising solutions, digital media audits, and full-funnel growth strategies to help Series A/B brands scale efficiently.</p>
+        <div class="features">
+            <div class="feature-box">
+                <h3>Google Ads Audit</h3>
+                <p>Identify inefficiencies, optimize spending, and improve conversion rates.</p>
+            </div>
+            <div class="feature-box">
+                <h3>AI-Powered Insights</h3>
+                <p>Leverage our proprietary tools like DeepVu and Nyo for intelligent media buying.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Full-Funnel Growth</h3>
+                <p>Optimize branding, acquisition, and retention strategies across multiple platforms.</p>
+            </div>
+        </div>
+        <h2 style="text-align:center; font-size:28px; color:#1a1a2e;">What Our Clients Say</h2>
+        <div class="testimonials">
+            <div class="testimonial-box">
+                <p>“YOptima transformed our digital marketing strategy, increasing our ROI by 150%!”</p>
+                <h4>- John Doe, CEO, TechGrowth</h4>
+            </div>
+            <div class="testimonial-box">
+                <p>“Their AI-powered insights helped us target the right audience, boosting our engagement rates.”</p>
+                <h4>- Jane Smith, Marketing Head, ScaleX</h4>
+            </div>
+        </div>
+        <h2 style="text-align:center; font-size:28px; color:#1a1a2e;">FAQs</h2>
+        <div class="faqs">
+            <div class="faq-box">
+                <h3 onclick="this.parentElement.classList.toggle('active')">How long does the audit take?</h3>
+                <p class="faq-content">Typically, our audits are completed within 5-7 business days.</p>
+            </div>
+            <div class="faq-box">
+                <h3 onclick="this.parentElement.classList.toggle('active')">What results can I expect?</h3>
+                <p class="faq-content">Most of our clients see an increase in ROI and better audience targeting within 4 weeks.</p>
+            </div>
+        </div>
+        <div class="cta">
+            <h2 style="color:#1a1a2e;">Ready to Scale Your Brand?</h2>
+            <button>Get a Free Audit</button>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2025 YOptima | Data-Driven Digital Growth | Contact us: info@yoptima.com</p>
+    </div>
 </body>
 </html>
